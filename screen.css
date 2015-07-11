@@ -64,8 +64,14 @@ h6 {
 p, a {
     font-size: 18px;
     font-weight: 300;
+    text-decoration: none;
 }
-
+a {
+    color: #555;
+}
+a:hover {
+    color: #222;
+}
 
 /**
  * Separator Line
