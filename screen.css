@@ -132,7 +132,7 @@ a:hover {
     background-image: url("/images/header.jpg");
     background-size: cover;
     text-align: center;
-    padding: 40px;
+    padding: 40px 0;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -170,6 +170,14 @@ a:hover {
     font-weight: 100;
     color: #bbb;
 }
+@media screen and (max-width: 700px) {
+    .header__logo {
+        font-size: 45px;
+    }
+    .header__heading {
+        font-size: 15px;
+    }
+}
 .header__separator {
     height: 2px;
     width: 60px;
@@ -194,6 +202,11 @@ a:hover {
     .header__nav a {
         padding: 10px 0;
         margin: 0 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header__nav a {
+        display: block;
     }
 }
 
@@ -307,8 +320,9 @@ a:hover {
     text-align: center;
 }
 .contact__list a {
-    padding: 10px 5px;
-    margin: 0 10px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px 10px;
     color: #f05f40;
     text-decoration: none;
 }
@@ -316,7 +330,6 @@ a:hover {
     color: #d85838;
 }
 .contact__list a.email {
-    padding: 10px 20px;
     background: #f05f40;
     color: #fff;
     border-radius: 4px;
@@ -324,4 +337,10 @@ a:hover {
 .contact__list a.email:hover {
     text-decoration: none;
     background: #d85838;
+}
+@media screen and (max-width: 400px) {
+    .contact__list a {
+        display: block;
+        margin: 0 0 10px;
+    }
 }
