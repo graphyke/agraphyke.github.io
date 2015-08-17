@@ -1,346 +1,444 @@
 /**
+ * Variables
+ */
+/**
  * Reset
  */
+/* line 11, screen.scss */
 * {
-    padding: 0;
-    margin: 0;
-    position: relative;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-
-    /* Default text styles*/
-    font-family: 'Open Sans', sans-serif;
-    color: #222;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  /* Default text styles*/
+  font-family: 'Open Sans', sans-serif;
+  color: #222;
 }
 
 /**
  * Layout
  */
+/* line 29, screen.scss */
 html, body {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
+
+/* line 33, screen.scss */
 html {
-    overflow: hidden;
+  overflow: hidden;
 }
+
+/* line 36, screen.scss */
 body {
-    overflow: auto;
-    -webkit-overflow-scrolling: touch;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 /**
  * Typography
  */
+/* line 44, screen.scss */
 h1 {
-    font-size: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
+/* line 49, screen.scss */
 h2 {
-    font-size: 30px;
-    font-weight: 600;
+  font-size: 30px;
+  font-weight: 400;
 }
+
+/* line 53, screen.scss */
 h3 {
-    font-size: 24px;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
+/* line 58, screen.scss */
 h4 {
-    font-size: 24px;
-    font-weight: 600;
+  font-size: 24px;
+  font-weight: 400;
 }
+
+/* line 62, screen.scss */
 h5 {
-    font-size: 18px;
-    font-weight: 600;
-    text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
 }
+
+/* line 67, screen.scss */
 h6 {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
 }
+
+/* line 71, screen.scss */
 p, a {
-    font-size: 18px;
-    font-weight: 300;
-    text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
 }
+
+/* line 76, screen.scss */
 a {
-    color: #555;
+  color: #555;
 }
+
+/* line 79, screen.scss */
 a:hover {
-    color: #222;
+  color: #222;
 }
 
 /**
  * Separator Line
  */
+/* line 86, screen.scss */
 .separator-line {
-    width: 100%;
-    max-width: 740px;
-    height: 1px;
-    margin: 0 auto;
-    background: lightgray;
+  width: 100%;
+  max-width: 740px;
+  height: 1px;
+  margin: 0 auto;
+  background: lightgray;
 }
 
 /**
  * Gallery
  */
+/* line 97, screen.scss */
 .gallery {
-    width: 100%;
-    margin: 60px 0;
-    overflow: hidden;
-    text-align: center;
-}
-.gallery__item {
-    width: 20%;
-    float: left;
-    text-align: center;
-}
-.gallery__image {
-    display: block;
-    width: 60%;
-    max-width: 120px;
-    margin: 0 auto 20px;
-}
-.gallery__label {
-    font-size: 16px;
-    padding: 0 10px;
-}
-@media screen and (max-width: 700px) {
-    .gallery__item {
-        width: 50%;
-        margin: 0 0 40px;
-    }
-}
-@media screen and (max-width: 400px) {
-    .gallery__item {
-        width: 100%;
-        float: none;
-        margin: 0 0 40px;
-    }
+  width: 100%;
+  margin: 60px 0;
+  overflow: hidden;
+  text-align: center;
 }
 
+/* line 103, screen.scss */
+.gallery__item {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+/* line 108, screen.scss */
+.gallery__image {
+  display: block;
+  width: 60%;
+  max-width: 120px;
+  margin: 0 auto 20px;
+}
+
+/* line 114, screen.scss */
+.gallery__label {
+  font-size: 16px;
+  padding: 0 10px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 121, screen.scss */
+  .gallery__item {
+    width: 50%;
+    margin: 0 0 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 127, screen.scss */
+  .gallery__item {
+    width: 100%;
+    float: none;
+    margin: 0 0 40px;
+  }
+}
 /**
  * Header
  */
+/* line 137, screen.scss */
 .header {
-    width: 100%;
-    min-height: 80%;
-    background: gray;
-    background-image: url("/images/header.jpg");
-    background-size: cover;
-    text-align: center;
-    padding: 40px 0;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
+  width: 100%;
+  min-height: 80%;
+  background: gray;
+  background-image: url("/images/header.png");
+  background-size: cover;
+  border-bottom: 1px solid #c5d1dc;
+  text-align: center;
+  padding: 40px 0;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  -o-align-items: center;
+  align-items: center;
 }
+
+/* line 157, screen.scss */
 .header__content {
-    width: 100%;
-    max-width: 800px;
-    padding: 100px 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 700px) {
-    .header__content {
-        max-width: 580px;
-    }
+  /* line 164, screen.scss */
+  .header__content {
+    max-width: 580px;
+  }
 }
+/* line 168, screen.scss */
 .header__logo {
-    font-size: 52px;
-    margin: 0 0 10px;
-    letter-spacing: 1px;
-    text-transform: none;
-    color: #fff;
-    text-shadow: 0 2px 0 rgba(0,0,0,0.2);
+  font-size: 58px;
+  margin: 0 0 12px;
+  letter-spacing: 1px;
+  text-transform: none;
+  color: #404042;
 }
+
+/* line 175, screen.scss */
 .header__heading {
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 100;
-    color: #bbb;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 100;
+  color: #404042;
 }
+
 @media screen and (max-width: 700px) {
-    .header__logo {
-        font-size: 45px;
-    }
-    .header__heading {
-        font-size: 15px;
-    }
+  /* line 182, screen.scss */
+  .header__logo {
+    font-size: 45px;
+  }
+
+  /* line 185, screen.scss */
+  .header__heading {
+    font-size: 15px;
+  }
 }
+/* line 189, screen.scss */
 .header__separator {
-    height: 2px;
-    width: 60px;
-    margin: 60px auto;
-    background: #f05f40;
+  height: 2px;
+  width: 60px;
+  margin: 60px auto;
+  background: #e5eaef;
 }
+
+/* line 195, screen.scss */
 .header__nav {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
+
+/* line 199, screen.scss */
 .header__nav a {
-    display: inline-block;
-    padding: 10px 5px;
-    margin: 0 20px;
-    color: #fff;
-    text-decoration: none;
+  display: inline-block;
+  padding: 10px 5px;
+  margin: 0 20px;
+  color: #62afd2;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
 }
+
+/* line 208, screen.scss */
 .header__nav a:hover {
-    color: #d85838;
+  color: #3a9bc7;
 }
+
 @media screen and (max-width: 700px) {
-    .header__nav a {
-        padding: 10px 0;
-        margin: 0 10px;
-    }
+  /* line 212, screen.scss */
+  .header__nav a {
+    padding: 10px 0;
+    margin: 0 10px;
+  }
 }
 @media screen and (max-width: 400px) {
-    .header__nav a {
-        display: block;
-    }
+  /* line 218, screen.scss */
+  .header__nav a {
+    display: block;
+  }
 }
-
-
 /**
  * About
  */
+/* line 227, screen.scss */
 .about {
-    width: 100%;
-    background: #fff;
-    text-align: center;
+  width: 100%;
+  background: #fff;
+  text-align: center;
 }
+
+/* line 232, screen.scss */
 .about__content {
-    width: 100%;
-    max-width: 800px;
-    padding: 100px 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 700px) {
-    .about__content {
-        max-width: 580px;
-    }
+  /* line 239, screen.scss */
+  .about__content {
+    max-width: 580px;
+  }
 }
+/* line 243, screen.scss */
 .about__heading {
-    width: 100%;
-    margin: 0 0 40px;
+  width: 100%;
+  margin: 0 0 40px;
 }
 
 /**
  * Process
  */
+/* line 251, screen.scss */
 .process {
-    width: 100%;
-    background: #F7F6F6;
-    text-align: center;
-    border-top: 1px solid #EFEDED;
-    border-bottom: 1px solid #EFEDED;
+  width: 100%;
+  background: #f5f7f9;
+  text-align: center;
+  border-top: 1px solid #e5eaef;
+  border-bottom: 1px solid #e5eaef;
 }
+
+/* line 258, screen.scss */
 .process__content {
-    width: 100%;
-    max-width: 800px;
-    padding: 100px 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 700px) {
-    .process__content {
-        max-width: 580px;
-    }
+  /* line 265, screen.scss */
+  .process__content {
+    max-width: 580px;
+  }
 }
+/* line 269, screen.scss */
 .process__heading {
-    width: 100%;
-    margin: 0 0 40px;
+  width: 100%;
+  margin: 0 0 40px;
 }
 
 /**
  * Process
  */
+/* line 277, screen.scss */
 .benefits {
-    width: 100%;
-    background: #fff;
-    text-align: center;
+  width: 100%;
+  background: #fff;
+  text-align: center;
 }
+
+/* line 282, screen.scss */
 .benefits__content {
-    width: 100%;
-    max-width: 800px;
-    padding: 100px 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 700px) {
-    .benefits__content {
-        max-width: 580px;
-    }
+  /* line 289, screen.scss */
+  .benefits__content {
+    max-width: 580px;
+  }
 }
+/* line 293, screen.scss */
 .benefits__heading {
-    width: 100%;
-    margin: 0 0 40px;
+  width: 100%;
+  margin: 0 0 40px;
 }
 
 /**
  * About
  */
+/* line 301, screen.scss */
 .contact {
-    width: 100%;
-    background: #E4E3E3;
-    text-align: center;
-    border-top: 1px solid #ccc;
+  width: 100%;
+  background: #f5f7f9;
+  text-align: center;
+  border-top: 1px solid #e5eaef;
 }
+
+/* line 307, screen.scss */
 .contact__content {
-    width: 100%;
-    max-width: 800px;
-    padding: 100px 20px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
 }
+
 @media screen and (max-width: 700px) {
-    .contact__content {
-        max-width: 580px;
-    }
+  /* line 314, screen.scss */
+  .contact__content {
+    max-width: 580px;
+  }
 }
+/* line 318, screen.scss */
 .contact__heading {
-    width: 100%;
-    margin: 0 0 40px;
+  width: 100%;
+  margin: 0 0 40px;
 }
+
+/* line 322, screen.scss */
 .contact__separator {
-    height: 1px;
-    width: 60px;
-    margin: 60px auto;
-    background: rgba(0,0,0,0.3);
+  height: 1px;
+  width: 60px;
+  margin: 60px auto;
+  background: rgba(0, 0, 0, 0.3);
 }
+
+/* line 328, screen.scss */
 .contact__list {
-    width: 100%;
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
+
+/* line 332, screen.scss */
 .contact__list a {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px 10px;
-    color: #f05f40;
-    text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px 10px;
+  color: #62afd2;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 17px;
 }
+
+/* line 341, screen.scss */
 .contact__list a:hover {
-    color: #d85838;
+  color: #62afd2;
 }
+
+/* line 344, screen.scss */
 .contact__list a.email {
-    background: #f05f40;
-    color: #fff;
-    border-radius: 4px;
+  background: #62afd2;
+  color: #fff;
+  border-radius: 4px;
 }
+
+/* line 349, screen.scss */
 .contact__list a.email:hover {
-    text-decoration: none;
-    background: #d85838;
+  text-decoration: none;
+  background: #62afd2;
 }
+
 @media screen and (max-width: 400px) {
-    .contact__list a {
-        display: block;
-        margin: 0 0 10px;
-    }
+  /* line 354, screen.scss */
+  .contact__list a {
+    display: block;
+    margin: 0 0 10px;
+  }
 }

@@ -1,0 +1,358 @@
+/**
+ * Variables
+ */
+$color-primary: #62AFD2;
+$color-bg-gray: #F5F7F9;
+$color-border-gray: darken($color-bg-gray, 5%);
+$color-gray: #404042;
+/**
+ * Reset
+ */
+* {
+    padding: 0;
+    margin: 0;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Default text styles*/
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+/**
+ * Layout
+ */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+html {
+    overflow: hidden;
+}
+body {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/**
+ * Typography
+ */
+h1 {
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+h3 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+h5 {
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h6 {
+    font-size: 18px;
+    font-weight: 400;
+}
+p, a {
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+a {
+    color: #555;
+}
+a:hover {
+    color: #222;
+}
+
+/**
+ * Separator Line
+ */
+.separator-line {
+    width: 100%;
+    max-width: 740px;
+    height: 1px;
+    margin: 0 auto;
+    background: lightgray;
+}
+
+/**
+ * Gallery
+ */
+.gallery {
+    width: 100%;
+    margin: 60px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.gallery__item {
+    width: 20%;
+    float: left;
+    text-align: center;
+}
+.gallery__image {
+    display: block;
+    width: 60%;
+    max-width: 120px;
+    margin: 0 auto 20px;
+}
+.gallery__label {
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+@media screen and (max-width: 700px) {
+    .gallery__item {
+        width: 50%;
+        margin: 0 0 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .gallery__item {
+        width: 100%;
+        float: none;
+        margin: 0 0 40px;
+    }
+}
+
+/**
+ * Header
+ */
+.header {
+    width: 100%;
+    min-height: 80%;
+    background: gray;
+    background-image: url("/images/header.png");
+    background-size: cover;
+    border-bottom: 1px solid darken($color-border-gray, 10%);
+    text-align: center;
+    padding: 40px 0;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    -o-align-items: center;
+    align-items: center;
+}
+.header__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .header__content {
+        max-width: 580px;
+    }
+}
+.header__logo {
+    font-size: 58px;
+    margin: 0 0 12px;
+    letter-spacing: 1px;
+    text-transform: none;
+    color: $color-gray;
+}
+.header__heading {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    color: $color-gray;
+}
+@media screen and (max-width: 700px) {
+    .header__logo {
+        font-size: 45px;
+    }
+    .header__heading {
+        font-size: 15px;
+    }
+}
+.header__separator {
+    height: 2px;
+    width: 60px;
+    margin: 60px auto;
+    background: $color-border-gray;
+}
+.header__nav {
+    width: 100%;
+    text-align: center;
+}
+.header__nav a {
+    display: inline-block;
+    padding: 10px 5px;
+    margin: 0 20px;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+}
+.header__nav a:hover {
+    color: darken($color-primary, 10%);
+}
+@media screen and (max-width: 700px) {
+    .header__nav a {
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .header__nav a {
+        display: block;
+    }
+}
+
+
+/**
+ * About
+ */
+.about {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.about__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .about__content {
+        max-width: 580px;
+    }
+}
+.about__heading {
+    width: 100%;
+    margin: 0 0 40px;
+}
+
+/**
+ * Process
+ */
+.process {
+    width: 100%;
+    background: $color-bg-gray;
+    text-align: center;
+    border-top: 1px solid $color-border-gray;
+    border-bottom: 1px solid $color-border-gray;
+}
+.process__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .process__content {
+        max-width: 580px;
+    }
+}
+.process__heading {
+    width: 100%;
+    margin: 0 0 40px;
+}
+
+/**
+ * Process
+ */
+.benefits {
+    width: 100%;
+    background: #fff;
+    text-align: center;
+}
+.benefits__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .benefits__content {
+        max-width: 580px;
+    }
+}
+.benefits__heading {
+    width: 100%;
+    margin: 0 0 40px;
+}
+
+/**
+ * About
+ */
+.contact {
+    width: 100%;
+    background: $color-bg-gray;
+    text-align: center;
+    border-top: 1px solid $color-border-gray;
+}
+.contact__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .contact__content {
+        max-width: 580px;
+    }
+}
+.contact__heading {
+    width: 100%;
+    margin: 0 0 40px;
+}
+.contact__separator {
+    height: 1px;
+    width: 60px;
+    margin: 60px auto;
+    background: rgba(0,0,0,0.3);
+}
+.contact__list {
+    width: 100%;
+    text-align: center;
+}
+.contact__list a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 10px 10px;
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 17px;
+}
+.contact__list a:hover {
+    color: $color-primary;
+}
+.contact__list a.email {
+    background: $color-primary;
+    color: #fff;
+    border-radius: 4px;
+}
+.contact__list a.email:hover {
+    text-decoration: none;
+    background: $color-primary;
+}
+@media screen and (max-width: 400px) {
+    .contact__list a {
+        display: block;
+        margin: 0 0 10px;
+    }
+}
