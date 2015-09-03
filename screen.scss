@@ -295,6 +295,14 @@ a:hover {
     margin: 0 0 40px;
 }
 
+.benefits.benefits--business {
+    border-bottom: 1px solid $color-border-gray;
+    .benefits__content {
+        padding: 100px 20px 70px;
+    }
+}
+
+
 /**
  * About
  */

@@ -245,7 +245,7 @@ a:hover {
   display: inline-block;
   padding: 10px 5px;
   margin: 0 20px;
-  color: #62afd2;
+  color: #62AFD2;
   text-decoration: none;
   font-weight: 400;
   font-size: 17px;
@@ -305,7 +305,7 @@ a:hover {
 /* line 251, screen.scss */
 .process {
   width: 100%;
-  background: #f5f7f9;
+  background: #F5F7F9;
   text-align: center;
   border-top: 1px solid #e5eaef;
   border-bottom: 1px solid #e5eaef;
@@ -361,18 +361,27 @@ a:hover {
   margin: 0 0 40px;
 }
 
+/* line 298, screen.scss */
+.benefits.benefits--business {
+  border-bottom: 1px solid #e5eaef;
+}
+/* line 300, screen.scss */
+.benefits.benefits--business .benefits__content {
+  padding: 100px 20px 70px;
+}
+
 /**
  * About
  */
-/* line 301, screen.scss */
+/* line 309, screen.scss */
 .contact {
   width: 100%;
-  background: #f5f7f9;
+  background: #F5F7F9;
   text-align: center;
   border-top: 1px solid #e5eaef;
 }
 
-/* line 307, screen.scss */
+/* line 315, screen.scss */
 .contact__content {
   width: 100%;
   max-width: 800px;
@@ -381,18 +390,18 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 314, screen.scss */
+  /* line 322, screen.scss */
   .contact__content {
     max-width: 580px;
   }
 }
-/* line 318, screen.scss */
+/* line 326, screen.scss */
 .contact__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
-/* line 322, screen.scss */
+/* line 330, screen.scss */
 .contact__separator {
   height: 1px;
   width: 60px;
@@ -400,43 +409,43 @@ a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 328, screen.scss */
+/* line 336, screen.scss */
 .contact__list {
   width: 100%;
   text-align: center;
 }
 
-/* line 332, screen.scss */
+/* line 340, screen.scss */
 .contact__list a {
   display: inline-block;
   padding: 10px 20px;
   margin: 0 10px 10px;
-  color: #62afd2;
+  color: #62AFD2;
   text-decoration: none;
   font-weight: 400;
   font-size: 17px;
 }
 
-/* line 341, screen.scss */
+/* line 349, screen.scss */
 .contact__list a:hover {
-  color: #62afd2;
+  color: #62AFD2;
 }
 
-/* line 344, screen.scss */
+/* line 352, screen.scss */
 .contact__list a.email {
-  background: #62afd2;
+  background: #62AFD2;
   color: #fff;
   border-radius: 4px;
 }
 
-/* line 349, screen.scss */
+/* line 357, screen.scss */
 .contact__list a.email:hover {
   text-decoration: none;
-  background: #62afd2;
+  background: #62AFD2;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 354, screen.scss */
+  /* line 362, screen.scss */
   .contact__list a {
     display: block;
     margin: 0 0 10px;
