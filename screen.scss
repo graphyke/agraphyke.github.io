@@ -1,3 +1,5 @@
+@import "compass";
+
 /**
  * Variables
  */
@@ -110,6 +112,10 @@ a:hover {
     width: 60%;
     max-width: 120px;
     margin: 0 auto 20px;
+
+    &.round {
+        @include border-radius(50%);
+    }
 }
 .gallery__label {
     font-size: 16px;
@@ -130,6 +136,77 @@ a:hover {
         margin: 0 0 40px;
     }
 }
+
+
+/**
+ * Gallery
+ */
+.people{
+    width: 100%;
+    margin: 60px 0;
+    overflow: hidden;
+    text-align: center;
+}
+.people__item {
+    width: 33.33%;
+    float: left;
+    text-align: center;
+}
+.people__image {
+    display: block;
+    width: 60%;
+    max-width: 120px;
+    margin: 0 auto 20px;
+    @include border-radius(50%);
+}
+.people__label {
+    font-size: 16px;
+    padding: 0 10px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.people__sub-label {
+    font-size: 14px;
+    padding: 5px 10px 0;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    @include opacity(0.5);
+}
+.people__icons {
+    text-align: center;
+    padding: 15px 10px 0;
+    .people__icon--lk,
+    .people__icon--tw {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        margin: 0 4px;
+        background-image: url("/images/linkedin.png");
+        background-size: contain;
+        @include opacity(0.3);
+        &:hover {
+            @include opacity(0.4);
+        }
+    }
+    .people__icon--tw {
+        background-image: url("/images/twitter.png");
+    }
+
+}
+@media screen and (max-width: 700px) {
+    .people__item {
+        width: 50%;
+        margin: 0 0 40px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .people__item {
+        width: 100%;
+        float: none;
+        margin: 0 0 40px;
+    }
+}
+
 
 /**
  * Header
@@ -272,7 +349,7 @@ a:hover {
 }
 
 /**
- * Process
+ * Benefit
  */
 .benefits {
     width: 100%;
@@ -304,11 +381,37 @@ a:hover {
 
 
 /**
+ * Team
+ */
+.team {
+    width: 100%;
+    background: $color-bg-gray;
+    text-align: center;
+    border-top: 1px solid $color-border-gray;
+}
+.team__content {
+    width: 100%;
+    max-width: 800px;
+    padding: 100px 20px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 700px) {
+    .team__content {
+        max-width: 580px;
+    }
+}
+.team__heading {
+    width: 100%;
+    margin: 0 0 40px;
+}
+
+
+/**
  * About
  */
 .contact {
     width: 100%;
-    background: $color-bg-gray;
+    background: #fff;
     text-align: center;
     border-top: 1px solid $color-border-gray;
 }
