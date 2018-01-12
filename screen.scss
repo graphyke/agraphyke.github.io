@@ -119,12 +119,12 @@ ul, ol {
  */
 .gallery {
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 40px;
     overflow: hidden;
     text-align: center;
 }
 .gallery__item {
-    width: 20%;
+    width: 25%;
     float: left;
     text-align: center;
 }
@@ -149,8 +149,8 @@ ul, ol {
 }
 .gallery__image {
     display: block;
-    width: 75%;
-    max-width: 120px;
+    width: 80%;
+    max-width: 150px;
     margin: 0 auto 20px;
 
     &.round {
@@ -355,7 +355,7 @@ ul, ol {
 .about__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -381,7 +381,7 @@ ul, ol {
 .products__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -405,7 +405,7 @@ ul, ol {
 .benefits__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -434,7 +434,7 @@ ul, ol {
 .clients__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -460,14 +460,11 @@ ul, ol {
  */
 .team {
     width: 100%;
-    background: $color-bg-gray;
-    text-align: center;
-    border-top: 1px solid $color-border-gray;
 }
 .team__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -487,13 +484,14 @@ ul, ol {
 .contact {
     width: 100%;
     background: #fff;
-    text-align: center;
+    text-align: left;
+    background: $color-bg-gray;
     border-top: 1px solid $color-border-gray;
 }
 .contact__content {
     width: 100%;
     max-width: 800px;
-    padding: 100px 20px;
+    padding: 60px 20px;
     margin: 0 auto;
 }
 @media screen and (max-width: 700px) {
@@ -508,12 +506,12 @@ ul, ol {
 .contact__separator {
     height: 1px;
     width: 60px;
-    margin: 60px auto;
+    margin: 40px 0;
     background: rgba(0,0,0,0.3);
 }
 .contact__list {
     width: 100%;
-    text-align: center;
+    text-align: left;
 }
 .contact__list a {
     display: inline-block;
