@@ -144,7 +144,7 @@ ul li, ol li {
 /* line 120, screen.scss */
 .gallery {
   width: 100%;
-  padding: 60px 0;
+  padding: 40px 0;
   overflow: hidden;
   text-align: center;
 }
@@ -184,7 +184,7 @@ ul li, ol li {
 /* line 150, screen.scss */
 .gallery__image {
   display: block;
-  width: 60%;
+  width: 75%;
   max-width: 120px;
   margin: 0 auto 20px;
 }
