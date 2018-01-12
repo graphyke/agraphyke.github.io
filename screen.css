@@ -4,7 +4,7 @@
 /**
  * Reset
  */
-/* line 13, screen.scss */
+/* line 14, screen.scss */
 * {
   padding: 0;
   margin: 0;
@@ -22,18 +22,18 @@
 /**
  * Layout
  */
-/* line 31, screen.scss */
+/* line 32, screen.scss */
 html, body {
   width: 100%;
   height: 100%;
 }
 
-/* line 35, screen.scss */
+/* line 36, screen.scss */
 html {
   overflow: hidden;
 }
 
-/* line 38, screen.scss */
+/* line 39, screen.scss */
 body {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
@@ -42,67 +42,94 @@ body {
 /**
  * Typography
  */
-/* line 46, screen.scss */
+/* line 47, screen.scss */
 h1 {
   font-size: 30px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 51, screen.scss */
+/* line 52, screen.scss */
 h2 {
   font-size: 30px;
   font-weight: 400;
 }
 
-/* line 55, screen.scss */
+/* line 56, screen.scss */
 h3 {
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 60, screen.scss */
+/* line 61, screen.scss */
 h4 {
   font-size: 24px;
   font-weight: 400;
 }
 
-/* line 64, screen.scss */
+/* line 65, screen.scss */
 h5 {
   font-size: 18px;
   font-weight: 400;
   text-transform: uppercase;
 }
 
-/* line 69, screen.scss */
+/* line 70, screen.scss */
 h6 {
   font-size: 18px;
   font-weight: 400;
 }
 
-/* line 73, screen.scss */
-p, a {
+/* line 74, screen.scss */
+p, a, ul, ol {
   font-size: 18px;
   line-height: 24px;
   font-weight: 300;
   text-decoration: none;
 }
-
 /* line 79, screen.scss */
+p strong, a strong, ul strong, ol strong {
+  font-weight: 400;
+}
+
+/* line 83, screen.scss */
+span.highlight {
+  color: #62AFD2;
+  font-weight: 400;
+}
+
+/* line 87, screen.scss */
+span.highlight2 {
+  display: block;
+  color: #62AFD2;
+  font-weight: 400;
+  margin-bottom: 5px;
+}
+
+/* line 93, screen.scss */
 a {
   color: #555;
 }
 
-/* line 82, screen.scss */
+/* line 96, screen.scss */
 a:hover {
   color: #222;
+}
+
+/* line 99, screen.scss */
+ul, ol {
+  padding: 10px 0 10px 20px;
+}
+/* line 101, screen.scss */
+ul li, ol li {
+  margin-bottom: 5px;
 }
 
 /**
  * Separator Line
  */
-/* line 89, screen.scss */
+/* line 109, screen.scss */
 .separator-line {
   width: 100%;
   max-width: 740px;
@@ -114,36 +141,61 @@ a:hover {
 /**
  * Gallery
  */
-/* line 100, screen.scss */
+/* line 120, screen.scss */
 .gallery {
   width: 100%;
-  margin: 60px 0;
+  padding: 60px 0;
   overflow: hidden;
   text-align: center;
 }
 
-/* line 106, screen.scss */
+/* line 126, screen.scss */
 .gallery__item {
   width: 20%;
   float: left;
   text-align: center;
 }
 
-/* line 111, screen.scss */
+/* line 131, screen.scss */
+.gallery__link {
+  display: block;
+}
+
+/* line 134, screen.scss */
+.gallery__popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+/* line 147, screen.scss */
+.gallery__link:hover + span.gallery__popup {
+  display: inline-block;
+}
+
+/* line 150, screen.scss */
 .gallery__image {
   display: block;
   width: 60%;
   max-width: 120px;
   margin: 0 auto 20px;
 }
-/* line 117, screen.scss */
+/* line 156, screen.scss */
 .gallery__image.round {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
-/* line 121, screen.scss */
+/* line 160, screen.scss */
 .gallery__label {
   font-size: 16px;
   padding: 0 10px;
@@ -152,14 +204,14 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 128, screen.scss */
+  /* line 167, screen.scss */
   .gallery__item {
     width: 50%;
     margin: 0 0 40px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 134, screen.scss */
+  /* line 173, screen.scss */
   .gallery__item {
     width: 100%;
     float: none;
@@ -167,44 +219,52 @@ a:hover {
   }
 }
 /**
- * Gallery
+ * GalleryB
  */
-/* line 145, screen.scss */
-.people {
+/* line 184, screen.scss */
+.GalleryB {
   width: 100%;
   margin: 60px 0;
   overflow: hidden;
   text-align: center;
 }
 
-/* line 151, screen.scss */
-.people__item {
+/* line 190, screen.scss */
+.GalleryB__item {
   width: 33.33%;
   float: left;
   text-align: center;
 }
 
-/* line 156, screen.scss */
-.people__image {
+/* line 195, screen.scss */
+.GalleryB__image {
   display: block;
   width: 60%;
   max-width: 120px;
   margin: 0 auto 20px;
+}
+/* line 200, screen.scss */
+.GalleryB__image.round {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
+/* line 203, screen.scss */
+.GalleryB__image.large {
+  width: 80%;
+  max-width: 160px;
+}
 
-/* line 163, screen.scss */
-.people__label {
+/* line 208, screen.scss */
+.GalleryB__label {
   font-size: 16px;
   padding: 0 10px;
   font-weight: 400;
   letter-spacing: 0.02em;
 }
 
-/* line 169, screen.scss */
-.people__sub-label {
+/* line 214, screen.scss */
+.GalleryB__sub-label {
   font-size: 14px;
   padding: 5px 10px 0;
   font-weight: 400;
@@ -213,44 +273,44 @@ a:hover {
   opacity: 0.5;
 }
 
-/* line 176, screen.scss */
-.people__icons {
+/* line 221, screen.scss */
+.GalleryB__icons {
   text-align: center;
   padding: 15px 10px 0;
 }
-/* line 179, screen.scss */
-.people__icons .people__icon--lk,
-.people__icons .people__icon--tw {
+/* line 224, screen.scss */
+.GalleryB__icons .GalleryB__icon--lk,
+.GalleryB__icons .GalleryB__icon--tw {
   display: inline-block;
   width: 32px;
   height: 32px;
   margin: 0 4px;
-  background-image: url("/images/linkedin.png");
+  background-image: url("/images/social/linkedin.png");
   background-size: contain;
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
   opacity: 0.3;
 }
-/* line 188, screen.scss */
-.people__icons .people__icon--lk:hover,
-.people__icons .people__icon--tw:hover {
+/* line 233, screen.scss */
+.GalleryB__icons .GalleryB__icon--lk:hover,
+.GalleryB__icons .GalleryB__icon--tw:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=40);
   opacity: 0.4;
 }
-/* line 192, screen.scss */
-.people__icons .people__icon--tw {
-  background-image: url("/images/twitter.png");
+/* line 237, screen.scss */
+.GalleryB__icons .GalleryB__icon--tw {
+  background-image: url("/images/social/twitter.png");
 }
 
 @media screen and (max-width: 700px) {
-  /* line 198, screen.scss */
-  .people__item {
+  /* line 243, screen.scss */
+  .GalleryB__item {
     width: 50%;
     margin: 0 0 40px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 204, screen.scss */
-  .people__item {
+  /* line 249, screen.scss */
+  .GalleryB__item {
     width: 100%;
     float: none;
     margin: 0 0 40px;
@@ -259,7 +319,7 @@ a:hover {
 /**
  * Header
  */
-/* line 215, screen.scss */
+/* line 260, screen.scss */
 .header {
   width: 100%;
   min-height: 80%;
@@ -281,7 +341,7 @@ a:hover {
   align-items: center;
 }
 
-/* line 235, screen.scss */
+/* line 280, screen.scss */
 .header__content {
   width: 100%;
   max-width: 800px;
@@ -290,12 +350,12 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 242, screen.scss */
+  /* line 287, screen.scss */
   .header__content {
     max-width: 580px;
   }
 }
-/* line 246, screen.scss */
+/* line 291, screen.scss */
 .header__logo {
   font-size: 58px;
   margin: 0 0 12px;
@@ -304,7 +364,7 @@ a:hover {
   color: #404042;
 }
 
-/* line 253, screen.scss */
+/* line 298, screen.scss */
 .header__heading {
   font-size: 18px;
   letter-spacing: 1px;
@@ -313,17 +373,17 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 260, screen.scss */
+  /* line 305, screen.scss */
   .header__logo {
     font-size: 45px;
   }
 
-  /* line 263, screen.scss */
+  /* line 308, screen.scss */
   .header__heading {
     font-size: 15px;
   }
 }
-/* line 267, screen.scss */
+/* line 312, screen.scss */
 .header__separator {
   height: 2px;
   width: 60px;
@@ -331,13 +391,13 @@ a:hover {
   background: #e5eaef;
 }
 
-/* line 273, screen.scss */
+/* line 318, screen.scss */
 .header__nav {
   width: 100%;
   text-align: center;
 }
 
-/* line 277, screen.scss */
+/* line 322, screen.scss */
 .header__nav a {
   display: inline-block;
   padding: 10px 5px;
@@ -348,20 +408,20 @@ a:hover {
   font-size: 17px;
 }
 
-/* line 286, screen.scss */
+/* line 331, screen.scss */
 .header__nav a:hover {
   color: #3a9bc7;
 }
 
 @media screen and (max-width: 700px) {
-  /* line 290, screen.scss */
+  /* line 335, screen.scss */
   .header__nav a {
     padding: 10px 0;
     margin: 0 10px;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 296, screen.scss */
+  /* line 341, screen.scss */
   .header__nav a {
     display: block;
   }
@@ -369,14 +429,14 @@ a:hover {
 /**
  * About
  */
-/* line 305, screen.scss */
+/* line 350, screen.scss */
 .about {
   width: 100%;
   background: #fff;
-  text-align: center;
+  text-align: justify;
 }
 
-/* line 310, screen.scss */
+/* line 355, screen.scss */
 .about__content {
   width: 100%;
   max-width: 800px;
@@ -385,31 +445,31 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 317, screen.scss */
+  /* line 362, screen.scss */
   .about__content {
     max-width: 580px;
   }
 }
-/* line 321, screen.scss */
+/* line 366, screen.scss */
 .about__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
 /**
- * Process
+ * products
  */
-/* line 329, screen.scss */
-.process {
+/* line 374, screen.scss */
+.products {
   width: 100%;
   background: #F5F7F9;
-  text-align: center;
+  text-align: left;
   border-top: 1px solid #e5eaef;
   border-bottom: 1px solid #e5eaef;
 }
 
-/* line 336, screen.scss */
-.process__content {
+/* line 381, screen.scss */
+.products__content {
   width: 100%;
   max-width: 800px;
   padding: 100px 20px;
@@ -417,28 +477,28 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 343, screen.scss */
-  .process__content {
+  /* line 388, screen.scss */
+  .products__content {
     max-width: 580px;
   }
 }
-/* line 347, screen.scss */
-.process__heading {
+/* line 392, screen.scss */
+.products__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
 /**
- * Benefit
+ * Benefits
  */
-/* line 355, screen.scss */
+/* line 400, screen.scss */
 .benefits {
   width: 100%;
   background: #fff;
-  text-align: center;
+  text-align: left;
 }
 
-/* line 360, screen.scss */
+/* line 405, screen.scss */
 .benefits__content {
   width: 100%;
   max-width: 800px;
@@ -447,30 +507,64 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 367, screen.scss */
+  /* line 412, screen.scss */
   .benefits__content {
     max-width: 580px;
   }
 }
-/* line 371, screen.scss */
+/* line 416, screen.scss */
 .benefits__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
-/* line 376, screen.scss */
-.benefits.benefits--business {
+/**
+ * Clients
+ */
+/* line 425, screen.scss */
+.clients {
+  width: 100%;
+  background: #fff;
+  width: 100%;
+  background: #F5F7F9;
+  text-align: left;
+  border-top: 1px solid #e5eaef;
   border-bottom: 1px solid #e5eaef;
 }
-/* line 378, screen.scss */
-.benefits.benefits--business .benefits__content {
+
+/* line 434, screen.scss */
+.clients__content {
+  width: 100%;
+  max-width: 800px;
+  padding: 100px 20px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 700px) {
+  /* line 441, screen.scss */
+  .clients__content {
+    max-width: 580px;
+  }
+}
+/* line 445, screen.scss */
+.clients__heading {
+  width: 100%;
+  margin: 0 0 40px;
+}
+
+/* line 450, screen.scss */
+.clients.clients--business {
+  border-bottom: 1px solid #e5eaef;
+}
+/* line 452, screen.scss */
+.clients.clients--business .clients__content {
   padding: 100px 20px 70px;
 }
 
 /**
  * Team
  */
-/* line 387, screen.scss */
+/* line 461, screen.scss */
 .team {
   width: 100%;
   background: #F5F7F9;
@@ -478,7 +572,7 @@ a:hover {
   border-top: 1px solid #e5eaef;
 }
 
-/* line 393, screen.scss */
+/* line 467, screen.scss */
 .team__content {
   width: 100%;
   max-width: 800px;
@@ -487,21 +581,21 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 400, screen.scss */
+  /* line 474, screen.scss */
   .team__content {
     max-width: 580px;
   }
 }
-/* line 404, screen.scss */
+/* line 478, screen.scss */
 .team__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
 /**
- * About
+ * Contact
  */
-/* line 413, screen.scss */
+/* line 487, screen.scss */
 .contact {
   width: 100%;
   background: #fff;
@@ -509,7 +603,7 @@ a:hover {
   border-top: 1px solid #e5eaef;
 }
 
-/* line 419, screen.scss */
+/* line 493, screen.scss */
 .contact__content {
   width: 100%;
   max-width: 800px;
@@ -518,18 +612,18 @@ a:hover {
 }
 
 @media screen and (max-width: 700px) {
-  /* line 426, screen.scss */
+  /* line 500, screen.scss */
   .contact__content {
     max-width: 580px;
   }
 }
-/* line 430, screen.scss */
+/* line 504, screen.scss */
 .contact__heading {
   width: 100%;
   margin: 0 0 40px;
 }
 
-/* line 434, screen.scss */
+/* line 508, screen.scss */
 .contact__separator {
   height: 1px;
   width: 60px;
@@ -537,13 +631,13 @@ a:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-/* line 440, screen.scss */
+/* line 514, screen.scss */
 .contact__list {
   width: 100%;
   text-align: center;
 }
 
-/* line 444, screen.scss */
+/* line 518, screen.scss */
 .contact__list a {
   display: inline-block;
   padding: 10px 20px;
@@ -554,26 +648,26 @@ a:hover {
   font-size: 17px;
 }
 
-/* line 453, screen.scss */
+/* line 527, screen.scss */
 .contact__list a:hover {
   color: #62AFD2;
 }
 
-/* line 456, screen.scss */
+/* line 530, screen.scss */
 .contact__list a.email {
   background: #62AFD2;
   color: #fff;
   border-radius: 4px;
 }
 
-/* line 461, screen.scss */
+/* line 535, screen.scss */
 .contact__list a.email:hover {
   text-decoration: none;
   background: #62AFD2;
 }
 
 @media screen and (max-width: 400px) {
-  /* line 466, screen.scss */
+  /* line 540, screen.scss */
   .contact__list a {
     display: block;
     margin: 0 0 10px;
